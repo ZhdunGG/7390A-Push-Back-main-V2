@@ -68,7 +68,7 @@ void TuneChassis() {
   if (homeScreen != NULL) {
         lv_scr_load(homeScreen); 
     }
+    
   chassis.setPose(0,0,0);
-  intake.move_velocity(200);
-  chassis.moveToPose(0, 40, 0, 10000);
+  chassis.moveToPose(-3, 38, -15, 10000, {.maxSpeed = 450});
 }
